@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   <style>
 
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
     .container {
       max-width: 1440px;
       /* background-color: lightcoral; */
     }
-
 
   </style>
 
@@ -31,42 +35,55 @@
         <button>Try It Free</button>
       </nav>
 
-      <h1>Build The Community Your Fans Will Love</h1>
+      <div class="flex">
+        <div>
+          <h1>Build The Community Your Fans Will Love</h1>
 
-      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-      Create connections with your users as you engage in genuine discussion.</p> 
+          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion.</p> 
 
-      <button class="pink-button">Get Started For Free</button>
+          <button class="pink-button">Get Started For Free</button>
+        </div>
+        <img class="mockup-img" src="images/illustration-mockups.svg" alt="mockup">
+      </div>
     </header>
 
     <main>
+      <div class="container">
+        <div class="box-flex">
       
-      <section class="article-box">
-        <h2>Grow Together</h2>
+          <section class="article-box">
+            <h2>Grow Together</h2>
 
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
-        Think of the insightful conversations you miss out on with a feedback form.</p> 
-      </section>
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+            <img src="images/illustration-grow-together.svg">
+          </section>
 
-      <section class="article-box">
-        <h2>Flowing Conversations</h2>
+          <section class="article-box">
+            <h2>Flowing Conversations</h2>
 
-        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-        have just-in-time loading for a more natural flow.</p>
-      </section>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+            have just-in-time loading for a more natural flow.</p>
+            <img src="images/illustration-flowing-conversation.svg">
+          </section>
 
-      <section class="article-box">
-        <h2>Your Users</h2>
+          <section class="article-box">
+            <h2>Your Users</h2>
 
-        <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
-        This means, once signed in to your app, your users can start chatting immediately.</p>
-      </section>
-      
-      <section class="call-to-action">
-        <h2>Ready To Build Your Community?</h2>
-        <button class="pink-button">Started For Free</button>
-      </section>
-      
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+            This means, once signed in to your app, your users can start chatting immediately.</p>
+            <img src="images/illustration-your-users.svg">
+          </section>
+          
+          <section class="call-to-action">
+            <h2>Ready To Build Your Community?</h2>
+            <button class="pink-button">Started For Free</button>
+          </section>
+
+        </div>
+        
+      </div>
     </main>
 
     <footer>
@@ -107,7 +124,7 @@
       <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
       
     </footer>
-</div>
+  </div>
 
 </body>
 </html>
