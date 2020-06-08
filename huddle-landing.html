@@ -47,6 +47,7 @@
 
     .flex {
       display: flex;
+      align-items: center;
     }
 
     .flex div {
@@ -60,12 +61,24 @@
       padding: 0 20px;
     }
 
+    .box {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 60px;
+      margin-bottom: 30px;
+    }
+
+    .box img {
+      width: 80%;
+    }
+
     header {
       background-image: url("images/bg-hero-desktop.svg");
       background-size: cover;
       background-position: center center;
       background-color: hsl(193, 100%, 96%);
       padding: 40px 0;
+      margin-bottom: 100px;
     }
 
     nav {
@@ -150,7 +163,7 @@
       </div>
     </main>
 
-    <section class="call-to-action">
+    <section class="call-to-action box">
       <h2>Ready To Build Your Community?</h2>
       <button class="pink-button">Started For Free</button>
     </section>
