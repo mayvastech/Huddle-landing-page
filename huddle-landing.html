@@ -63,13 +63,20 @@
 
     .box {
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
+      border-radius: 15px;
       padding: 60px;
       margin-bottom: 30px;
     }
 
     .box img {
       width: 80%;
+    }
+
+    .call-to-action {
+      max-width: 700px;
+      margin: 100px auto 70px auto;
+      text-align: center;
+      padding: 30px 40px;
     }
 
     header {
@@ -84,6 +91,31 @@
     nav {
       justify-content: space-between;
       margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: hsl(192, 100%, 9%);
+      color: white;
+      padding: 180px 50px 60px;
+    }
+
+    footer div ul a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+    }
+
+    footer .circle {
+      border: solid 2px white;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    footer ul {
+      list-style: none;
     }
 
   </style>
@@ -171,6 +203,7 @@
     <footer>
       <div class="flex">
         <div>
+          <img class="logo" src="images/logo.svg" alt="logo">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua</p>
           
@@ -209,10 +242,16 @@
             </a>
           </ul>
         </div>
-        
-        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+
+        <div>
+          <ul class="flex">
+            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
         
       </footer>
   </div>
