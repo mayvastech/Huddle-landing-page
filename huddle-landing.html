@@ -134,15 +134,21 @@
     }
 
     @media screen and (max-width: 768px) {
+
       div footer p {
         text-align: center;
       }
+
       nav.flex {
         flex-direction: row;
       }
 
       .flex {
         flex-direction: column;
+      }
+
+      .mobile-flex-reverse {
+        flex-direction: column-reverse;
       }
     }
     
@@ -194,7 +200,7 @@
           </div>
         </section>
 
-        <section class="box flex">
+        <section class="box flex mobile-flex-reverse">
           <div>
 
             <img src="images/illustration-flowing-conversation.svg">
