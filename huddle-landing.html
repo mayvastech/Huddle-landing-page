@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/7f8596da27.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   
@@ -73,10 +74,17 @@
     }
 
     .call-to-action {
-      max-width: 700px;
-      margin: 100px auto 70px auto;
+      display: inline-block;
+      /* margin: 100px auto 70px auto; */
       text-align: center;
       padding: 30px 40px;
+      background-color: #fff;
+    }
+
+    div .call-to-action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     header {
@@ -93,10 +101,11 @@
       margin-bottom: 40px;
     }
 
+
     footer {
       background-color: hsl(192, 100%, 9%);
       color: white;
-      padding: 180px 50px 60px;
+      padding: 100px 40px 40px;
     }
 
     footer div ul a {
@@ -109,13 +118,19 @@
       border: solid 2px white;
       width: 40px;
       height: 40px;
-      display: inline-block;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
       border-radius: 50%;
       margin-right: 10px;
     }
 
     footer ul {
       list-style: none;
+    }
+
+    footer p {
+      text-align: right;
     }
 
   </style>
@@ -195,65 +210,69 @@
       </div>
     </main>
 
-    <section class="call-to-action box">
-      <h2>Ready To Build Your Community?</h2>
-      <button class="pink-button">Started For Free</button>
-    </section>
+    <div class="call-to-action">
+      <section class="box">
+        <h2>Ready To Build Your Community?</h2>
+        <button class="pink-button">Started For Free</button>
+      </section>
+    </div>
 
-    <footer>
-      <div class="flex">
-        <div>
-          <img class="logo" src="images/logo.svg" alt="logo">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua</p>
-          
-          <p>+1-543-123-4567</p>
-          <p>example@huddle.com</p>
-        </div>
-       
-        <div>
-          <ul>
-            <a href="#">
-              <li>About Us</li>
-            </a>
-
-            <a href="#">
-              <li>What We Do</li>
-            </a>
-
-            <a href="#">
-              <li>FAQ</li>
-            </a>
-          </ul>
-        </div>
-          
-        <div>
-          <ul>
-            <a href="#">
-              <li>Career</li>
-            </a>
-
-            <a href="#">
-              <li>Blog</li>
-            </a>
-
-            <a href="#">
-              <li>Contact Us</li>
-            </a>
-          </ul>
-        </div>
-
-        <div>
-          <ul class="flex">
-            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+    <div>
+      <footer>
+        <div class="flex">
+          <div>
+            <img class="logo" src="images/logo-white.svg" alt="logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua</p>
+            
+            <p>+1-543-123-4567</p>
+            <p>example@huddle.com</p>
+          </div>
         
-      </footer>
+          <div>
+            <ul>
+              <a href="#">
+                <li>About Us</li>
+              </a>
+
+              <a href="#">
+                <li>What We Do</li>
+              </a>
+
+              <a href="#">
+                <li>FAQ</li>
+              </a>
+            </ul>
+          </div>
+            
+          <div>
+            <ul>
+              <a href="#">
+                <li>Career</li>
+              </a>
+
+              <a href="#">
+                <li>Blog</li>
+              </a>
+
+              <a href="#">
+                <li>Contact Us</li>
+              </a>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex">
+              <li><a class="circle" href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="circle" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="circle" href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+          
+        </footer>
+    </div>
   </div>
 
 </body>
